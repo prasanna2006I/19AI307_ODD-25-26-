@@ -1,8 +1,6 @@
 # Ex.No:1(E) STRINGS AND MATH FUNCTION
-
 ## QUESTION:
 To write a Java program to reverse a given string.
-
 ## AIM:
 To write a Java program to reverse a given string.
 
@@ -17,7 +15,6 @@ To write a Java program to reverse a given string.
 8. Display the reversed string.
 9. Close the scanner.
 10. End the program.
-
 ## PROGRAM:
  ```
 /*
