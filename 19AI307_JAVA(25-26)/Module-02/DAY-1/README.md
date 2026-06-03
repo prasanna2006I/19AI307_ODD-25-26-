@@ -1,78 +1,88 @@
 # Ex.No:2(A) CLASS AND OBJECT
 
 ## QUESTION:
-Create a class Car with attributes brand, model, year. Create 2 objects and print their details.
-
-
+Define a class Car with brand (String), color (String), and year (int). Create 2 different objects of Car  Assign values to attributes. Print the details of both cars.import java.util.Scanner;
 ## AIM:
-To create a Java class Car with attributes brand, model, and year, and display the details of two car objects.
-
+To define a class Car with attributes brand, color, and year; create two objects of the class; assign values to their attributes; and print the details of both cars.
 
 ## ALGORITHM :
-1.	Start the program and define a class Car with attributes brand, model, and year.
+1. Define a class Car with three data members:
 
-2. Create a constructor in the Car class to initialize the attributes.
+     String brand
+     String color
+     int year
+ and a method printDetails() to display these values.
 
-3. Define a display method in the Car class to print the car details with a label.
+2. In the main() method, create a Scanner object to read user inputs.
 
-4. In the main method, create two Car objects with different attribute values.
+3. Create the first object car1 and read its brand, color, and year from the user.
 
-5. Call the display method for each object to print their details and stop the          program.
+4. Create the second object car2 and read its brand, color, and year.
 
+5. Call printDetails() for car1 to display its information.
 
+6. Call printDetails() for car2 to display its information.
 
+7.Close the scanner and end the program.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Class and Objects using Java
-Developed by: kolluru pujitha
-RegisterNumber: 212223240074
+Developed by: AASHIKA JAIN
+RegisterNumber: 212224110001
 */
 ```
 
 ## SOURCE CODE:
 ```
+import java.util.Scanner;
+
 class Car {
     String brand;
-    String model;
+    String color;
     int year;
 
-    Car(String brand, String model, int year) {
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
-    }
-
-    public void display(String label) {
-        System.out.println(label + ": " + brand + " " + model + " " + year);
+    void printDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Color: " + color);
+        System.out.println("Year: " + year);
     }
 }
 
-public class CarDemo {
+class prog {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        Car car1 = new Car("Toyota", "Innova", 2022);
-        Car car2 = new Car("Hyundai", "i20", 2021);
+        
+        Car car1 = new Car();
+        car1.brand = scanner.nextLine();
+        car1.color = scanner.nextLine();
+        car1.year = scanner.nextInt();
+        scanner.nextLine();
 
-        car1.display("Car 1");
-        car2.display("Car 2");
+        
+        Car car2 = new Car();
+        car2.brand = scanner.nextLine();
+        car2.color = scanner.nextLine();
+        car2.year = scanner.nextInt();
+
+        car1.printDetails();
+        car2.printDetails();
+
+        scanner.close();
     }
 }
 ```
 
 
-
-
-
-
 ## OUTPUT:
-
-<img width="695" height="186" alt="image" src="https://github.com/user-attachments/assets/db44eda4-4363-45b4-9881-5a444b2f20e2" />
+<img width="597" height="685" alt="image" src="https://github.com/user-attachments/assets/05ebe553-f279-4f17-b125-675b4afd47bd" />
 
 
 ## RESULT:
-The program successfully creates two Car objects and prints their brand, model, and year information.
+Therefore,the program successfully creates two Car objects and assigns values to their attributes.
+
 
 
