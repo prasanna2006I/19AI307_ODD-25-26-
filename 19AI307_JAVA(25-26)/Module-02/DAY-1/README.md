@@ -1,30 +1,23 @@
-# Ex.No:2(B) METHODS
+# Ex.No:2(A) CLASS AND OBJECT
 
 ## QUESTION:
-Write a class with one static method and one non-static method. Call both from the main() method.
-
-When staticMethod() is called, it should print  "I am static".
-
-When nonStaticMethod() is called, it should print  "I am non-static"
-
-<img width="169" height="153" alt="image" src="https://github.com/user-attachments/assets/34d50995-5383-43f7-bbe8-2d0716447279" />
-
+Create a class Car with attributes brand, model, year. Create 2 objects and print their details.
 
 
 ## AIM:
-To create a Java class with one static method and one non-static method, and demonstrate calling both from the main() method.
+To create a Java class Car with attributes brand, model, and year, and display the details of two car objects.
 
 
 ## ALGORITHM :
-1.	Start the program and define a class MyClass.
+1.	Start the program and define a class Car with attributes brand, model, and year.
 
-2. Create a static method staticMethod() that prints "I am static".
+2. Create a constructor in the Car class to initialize the attributes.
 
-3. Create a non-static method nonStaticMethod() that prints "I am non-static".
+3. Define a display method in the Car class to print the car details with a label.
 
-4. In the main() method, call the static method directly using the class name.
+4. In the main method, create two Car objects with different attribute values.
 
-5. Create an object of MyClass and call the non-static method using this object,        then stop the program.
+5. Call the display method for each object to print their details and stop the          program.
 
 
 
@@ -33,27 +26,38 @@ To create a Java class with one static method and one non-static method, and dem
 ## PROGRAM:
  ```
 /*
-Program to implement a Methods using Java
-Developed by: AASHIKA JAIN
-RegisterNumber: 212224110001
+Program to implement a Class and Objects using Java
+Developed by: kolluru pujitha
+RegisterNumber: 212223240074
 */
 ```
 
 ## SOURCE CODE:
-
 ```
-public class MyClass {
-    public static void staticMethod() {
-        System.out.println("I am static");
-    }
-    public void nonStaticMethod() {
-        System.out.println("I am non-static");
+class Car {
+    String brand;
+    String model;
+    int year;
+
+    Car(String brand, String model, int year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
     }
 
+    public void display(String label) {
+        System.out.println(label + ": " + brand + " " + model + " " + year);
+    }
+}
+
+public class CarDemo {
     public static void main(String[] args) {
-        MyClass.staticMethod();
-        MyClass obj = new MyClass();
-        obj.nonStaticMethod();
+
+        Car car1 = new Car("Toyota", "Innova", 2022);
+        Car car2 = new Car("Hyundai", "i20", 2021);
+
+        car1.display("Car 1");
+        car2.display("Car 2");
     }
 }
 ```
@@ -62,12 +66,13 @@ public class MyClass {
 
 
 
+
 ## OUTPUT:
 
-<img width="415" height="177" alt="image" src="https://github.com/user-attachments/assets/42d4690f-4107-4267-9fa7-b525104e3635" />
+<img width="695" height="186" alt="image" src="https://github.com/user-attachments/assets/db44eda4-4363-45b4-9881-5a444b2f20e2" />
 
 
 ## RESULT:
-The program successfully calls the static method to print “I am static” and the non-static method to print “I am non-static”.
+The program successfully creates two Car objects and prints their brand, model, and year information.
 
 
