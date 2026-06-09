@@ -1,10 +1,6 @@
 # Ex.No:4(E) DESIGN PATTERN ---- BEHAVIOUR PATTERN
-
 ## QUESTION:
 Create a ChatRoom class (mediator) and two users (colleagues) who send and receive messages through it. No direct communication allowed. (Mediator Pattern)
-<img width="718" height="724" alt="image" src="https://github.com/user-attachments/assets/84619fdb-d6d4-4148-a413-b6bab3807009" />
-
-
 ## AIM:
 To implement the Mediator Design Pattern using a ChatRoom class where users communicate indirectly through a mediator..
 
